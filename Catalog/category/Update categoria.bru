@@ -1,0 +1,17 @@
+meta {
+  name: Update categoria
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{host}}/categories/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name":"Automotivos"
+  }
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Update dos produtos
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{host}}/products/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  "name": "Corsinha",
+  "description":"Nulla a laoreet ipsum. Quisque vestibulum ante ut justo gravida cursus eget in augue. Nunc facilisis, nulla ac tincidunt placerat, diam nisi imperdiet tortor, a rhoncus justo velit nec augue. Aenean placerat massa est, ut mollis eros iaculis vel. Donec tincidunt mauris enim, eu bibendum erat egestas vel. Quisque fermentum libero tortor. Ut mi leo, fermentum et dui vel, fringilla convallis magna. Praesent a mi id orci dignissim lacinia nec in urna. Etiam augue mauris, hendrerit vitae dictum at, tristique aliquam eros. Nullam a congue nisi, nec tempor justo. Duis a massa sem. Morbi convallis neque eu ornare ultricies.",
+  "price":5000,
+  "imgUrl":"https://carro.mercadolivre.com.br/MLB-5127024746-chevrolet-corsa-14-maxx-econoflex-5p-_JM#position%3D2%26search_layout%3Dgrid%26type%3Ditem%26tracking_id%3D541f22d1-39ee-447a-b518-952a9b70f69c",
+  "date":"2023-10-24T10:15:30Z"
+  }
+}
