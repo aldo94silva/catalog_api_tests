@@ -38,9 +38,9 @@ public class ProductRepositoryTests {
         Product product = new Product();
         product.setName("Test Product");
         product.setDescription("Test Description");
-        product.setPrice(1.0);
+        product.setPrice(550.0);
         product.setImgUrl("localhost/testimg");
-        product.setDate(Instant.parse("2024-10-25T21:21:00:000+03:00"));
+//        product.setDate(Instant.parse("2024-10-25T21:21:00:00+03:00"));
         Product savedProduct = repository.save(product);
 
         //Asserts são para certificar se tudo deu certo
